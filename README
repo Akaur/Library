@@ -1,7 +1,0 @@
-liblc.h is a main file.
-
-lc.cpp in which we define function.
-
-lcmain.cpp is a main function.
-
-All oother files are for reading and writing.
