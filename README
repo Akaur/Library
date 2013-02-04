@@ -1,0 +1,29 @@
+Libraries in cpp
+
+#### This library is used to draw line or circle.  #####
+
+Download this library and place it where you want to use it.
+
+		How to use it
+
+1) Include it as another header file (#include "liblc.h")
+
+2) Compiling a program
+
+    $ g++ program_name.cpp -o main -L/path/to/library -lliblc
+    
+3) Execute your program<br>
+
+    $ ./main
+
+If you got following error:<br>
+
+    ./main: error while loading shared libraries: liblc.so
+    cannot open shared object file: No such file or directory
+    
+Then create symbolic link of library:
+
+    $ ln -s /path/to/library/liblc.so /usr/lib/liblc.so
+    
+lcmain.cpp is a example of using this library.
+    
