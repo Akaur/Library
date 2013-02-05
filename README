@@ -4,26 +4,16 @@ Libraries in cpp
 
 Download this library and place it where you want to use it.
 
-		How to use it
+If you don't have sudo powers,then use the following steps to execute this library.
 
-1) Include it as another header file (#include "liblc.h")
 
-2) Compiling a program
+1) Compilation
+		  $ export LD_LIBRARY_PATH=/home/username/Library/liblc
+		  $ echo $ LD_LIBRARY_PATH
+		  If output is /home/username/Library/liblc ,then execute next command	
+  		  $ g++ -L/home/username/Library/liblc -Wall -o test lcmain.cpp -llc
 
-    $ g++ program_name.cpp -o main -L/path/to/library -lliblc
     
-3) Execute your program<br>
+2) Execution
 
-    $ ./main
-
-If you got following error:<br>
-
-    ./main: error while loading shared libraries: liblc.so
-    cannot open shared object file: No such file or directory
-    
-Then create symbolic link of library:
-
-    $ ln -s /path/to/library/liblc.so /usr/lib/liblc.so
-    
-lcmain.cpp is a example of using this library.
-    
+   		  $ ./test
