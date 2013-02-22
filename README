@@ -1,0 +1,5 @@
+Libraries in C++
+
+liblc.so is a dynamic library made in C++.
+This library is used to generate DXF file that can be opened in LibreCAD.
+Although it is not completed yet but it can generate DXF file for line and circle.
